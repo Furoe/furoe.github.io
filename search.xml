@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue</title>
+      <link href="2020/11/24/Vue/"/>
+      <url>2020/11/24/Vue/</url>
+      
+        <content type="html"><![CDATA[<h3 id="v-if-和v-show的区别"><a href="#v-if-和v-show的区别" class="headerlink" title="v-if 和v-show的区别"></a>v-if 和v-show的区别</h3><p><code>v-if</code>控制节点的存在，<code>v-show</code>控制节点的<code>display</code>属性。因此<code>v-if</code>的切换成本高，<code>v-show</code>的初始渲染成本高。所以<code>v-if</code>适用于条件几乎不变的情况，而切换比较频繁的时候适合使用<code>v-show</code>。</p><h3 id="template-functional"><a href="#template-functional" class="headerlink" title="template functional"></a>template functional</h3><p><code>functional</code>是函数式组件的一个标记，如果一个组件没有管理任何状态，也没有监听任何传给它的状态，没有声明周期方法。只是接收一些<code>props</code>的函数，在这种情况下可以将组件标记为<code>functional</code>，这表示它是无状态的(没有响应数据)，也没有实例(this上下文)。函数式组件本质上是函数，渲染开销小。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vuex</title>
       <link href="2020/11/19/Vuex/"/>
       <url>2020/11/19/Vuex/</url>
