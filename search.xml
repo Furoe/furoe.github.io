@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CSS实现瀑布流</title>
+      <link href="2021/01/01/CSS%E5%AE%9E%E7%8E%B0%E7%80%91%E5%B8%83%E6%B5%81/"/>
+      <url>2021/01/01/CSS%E5%AE%9E%E7%8E%B0%E7%80%91%E5%B8%83%E6%B5%81/</url>
+      
+        <content type="html"><![CDATA[<p>之前没有写过瀑布流，最近需要改一个东西，学习一下。<br>瀑布流的实现主要通过几个关键属性来实现。</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;content&#x27;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;item&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;item&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;item&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;item&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p><code>columns</code>代表瀑布流中流的数量，<code>column-gap</code>代表流之间的间距，<code>break-inside</code>用来避免流内的内容被隔开。</p></blockquote><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.content</span>&#123;</span><br><span class="line">    <span class="attribute">columns</span>: <span class="number">4</span>;</span><br><span class="line">    <span class="attribute">column-gap</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item</span>&#123;</span><br><span class="line">    <span class="attribute">break-inside</span>: avoid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2020-2021的总结</title>
       <link href="2020/12/31/2020-2021/"/>
       <url>2020/12/31/2020-2021/</url>
