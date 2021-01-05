@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>虚拟DOM和增量DOM</title>
+      <link href="2021/01/05/%E8%99%9A%E6%8B%9FDOM%E5%92%8C%E5%A2%9E%E9%87%8FDOM/"/>
+      <url>2021/01/05/%E8%99%9A%E6%8B%9FDOM%E5%92%8C%E5%A2%9E%E9%87%8FDOM/</url>
+      
+        <content type="html"><![CDATA[<h3 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h3><h4 id="虚拟DOM的工作流程"><a href="#虚拟DOM的工作流程" class="headerlink" title="虚拟DOM的工作流程"></a>虚拟DOM的工作流程</h4><ul><li>当用户UI发生变化时，将整个用户UI渲染到虚拟DOM中</li><li>将当前虚拟DOM与之前的虚拟DOM进行比较，计算表现形式间的差异</li><li>根据变化差异更新真实DOM<h4 id="虚拟DOM的优缺点"><a href="#虚拟DOM的优缺点" class="headerlink" title="虚拟DOM的优缺点"></a>虚拟DOM的优缺点</h4>优点</li><li>高效的diff算法</li><li>简单且有助于提升性能</li><li>轻量</li><li>允许构建应用程序不需要考虑状态转换<br>缺点</li><li>哪怕只是微小变化，也会检查所有步骤来识别变化<h3 id="增量DOM"><a href="#增量DOM" class="headerlink" title="增量DOM"></a>增量DOM</h3><h4 id="增量DOM的工作方式"><a href="#增量DOM的工作方式" class="headerlink" title="增量DOM的工作方式"></a>增量DOM的工作方式</h4>增量DOM通过使用真实DOM来定位代码更新，这种方法比虚拟DOM简单，内存中不会存任何真实DOM的虚拟表示来计算差异，真实DOM仅用于与新的DOM进行差异比较。<h4 id="增量DOM的优缺点"><a href="#增量DOM的优缺点" class="headerlink" title="增量DOM的优缺点"></a>增量DOM的优缺点</h4>优点</li><li>易于与其他框架结合使用</li><li>简单的API使其成为强大的目标模板引擎</li><li>适合基于移动设备的应用程序<br>缺点</li><li>耗时<h3 id="虚拟DOM和增量DOM的区别"><a href="#虚拟DOM和增量DOM的区别" class="headerlink" title="虚拟DOM和增量DOM的区别"></a>虚拟DOM和增量DOM的区别</h3></li><li>虚拟DOM不直接操作真实DOM而是计算差异再更新，增量DOM直接操作真实DOM</li><li>虚拟DOM用的是解释器，无法使用tree shaking，而增量DOM可以</li><li>虚拟DOM再内存中存放真实DOM的虚拟表示，占用大量内存，增量DOM不会</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> front-end </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> DOM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS实现瀑布流</title>
       <link href="2021/01/01/CSS%E5%AE%9E%E7%8E%B0%E7%80%91%E5%B8%83%E6%B5%81/"/>
       <url>2021/01/01/CSS%E5%AE%9E%E7%8E%B0%E7%80%91%E5%B8%83%E6%B5%81/</url>
