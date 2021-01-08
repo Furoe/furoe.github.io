@@ -20,11 +20,8 @@
 <td><code>&lt;router-link :to=&#39;...&#39;&gt;</code></td>
 <td><code>router.push(...)</code></td>
 </tr>
-<tr>
-<td>注意：如果目的路由与当前路由相同，只是参数发生变化，需要使用<code>beforeRouteUpdate</code>来响应这个变化。</td>
-<td></td>
-</tr>
 </tbody></table>
+<p>注意：如果目的路由与当前路由相同，只是参数发生变化，需要使用<code>beforeRouteUpdate</code>来响应这个变化。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">router.replace(location, onComplete?, onAbort?)</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -37,11 +34,8 @@
 <td><code>&lt;router-link :to=&#39;...&#39; replace&gt;</code></td>
 <td><code>router.replace()</code></td>
 </tr>
-<tr>
-<td><code>router.replace</code>与<code>router.push</code>很像，但是<code>router.replace</code>不会向<code>history</code>添加新纪录，而是替换掉当前<code>history</code>的记录。</td>
-<td></td>
-</tr>
 </tbody></table>
+<p><code>router.replace</code>与<code>router.push</code>很像，但是<code>router.replace</code>不会向<code>history</code>添加新纪录，而是替换掉当前<code>history</code>的记录。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">router.go(n)</span><br></pre></td></tr></table></figure>
 <p>类似于<code>window.history.go(n)</code></p>
 <h4 id="路由组件传参"><a href="#路由组件传参" class="headerlink" title="路由组件传参"></a>路由组件传参</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//pass</span></span><br><span class="line"><span class="comment">//后续补充，还没理解耦合问题</span></span><br></pre></td></tr></table></figure>
