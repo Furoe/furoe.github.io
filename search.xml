@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>react+ts+antd建站</title>
+      <link href="2021/01/13/react-ts-antd%E5%BB%BA%E7%AB%99/"/>
+      <url>2021/01/13/react-ts-antd%E5%BB%BA%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<h3 id="使用脚手架创建工程"><a href="#使用脚手架创建工程" class="headerlink" title="使用脚手架创建工程"></a>使用脚手架创建工程</h3><p><code>npx create-react-app my-app --template typescript</code><br>或者<br><code>yarn create-react-app my-app --typescript</code></p><h3 id="安装antd"><a href="#安装antd" class="headerlink" title="安装antd"></a>安装antd</h3><p><code>npm install antd --save</code></p><h3 id="安装node-sass和sass-loader"><a href="#安装node-sass和sass-loader" class="headerlink" title="安装node-sass和sass-loader"></a>安装node-sass和sass-loader</h3><p>这里有个坑，要先安装<code>node-sass</code>，再安装<code>sass-loader</code>。如果先安装<code>sass-loader</code>，默认安装的<code>sass-loader</code>依赖的是<code>^4.0.0</code>的<code>node-sass</code>，而默认安装的<code>node-sass</code>是<code>5.0.0</code>的，会出现版本不兼容问题。<br>如果在这时候卸载<code>sass-loadeer</code>，然后安装高版本的<code>sass-loader</code>，又会出现其它模块的不兼容问题。<br>如果你选择安装<code>node-sass@4.14.1</code>，这时候还会出现<code>python</code>报错的问题，于是<code>npm config set sass_binary_site=https://npm.taobao.org/mirrors/node-sass</code>设置为淘宝源，再下载就好了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> React </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> React </tag>
+            
+            <tag> Typescript </tag>
+            
+            <tag> AntDesign </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue-router学习记录</title>
       <link href="2021/01/07/vue-router%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
       <url>2021/01/07/vue-router%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
